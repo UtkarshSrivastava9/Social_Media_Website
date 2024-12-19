@@ -1,0 +1,180 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.register-left {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-placeholder img {
+  width: 80%;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.slogan {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.sub-slogan {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.register-right {
+  padding: 40px;
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #6e8efb;
+}
+
+.login-link a {
+  color: #6e8efb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form-title {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6e8efb;
+}
+
+.terms {
+  font-size: 14px;
+}
+
+.terms a {
+  color: #6e8efb;
+  text-decoration: underline;
+}
+
+.create-account-btn {
+  padding: 15px;
+  font-size: 16px;
+  color: white;
+  background-color: #6e8efb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-account-btn:hover {
+  background-color: #5771c3;
+}
+
+.social-signup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.facebook-btn,
+.twitter-btn,
+.google-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+}
+
+.facebook-btn {
+  background-color: #3b5998;
+}
+
+.twitter-btn {
+  background-color: #1da1f2;
+}
+
+.google-btn {
+  background-color: #db4437;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+  color: #888;
+}
+
+@media (min-width: 768px) {
+  .register-container {
+    flex-direction: row;
+  }
+
+  .register-left {
+    flex: 1;
+  }
+
+  .register-right {
+    flex: 1.5;
+  }
+
+  .social-signup {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
